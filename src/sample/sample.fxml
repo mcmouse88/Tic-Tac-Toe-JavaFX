@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="420.0" style="-fx-background-color: #b22222;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="button1" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button2" layoutX="160.0" layoutY="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button3" layoutX="270.0" layoutY="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button4" layoutX="50.0" layoutY="230.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button5" layoutX="160.0" layoutY="230.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button6" layoutX="270.0" layoutY="230.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button7" layoutX="50.0" layoutY="340.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button8" layoutX="160.0" layoutY="340.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="button9" layoutX="270.0" layoutY="340.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="buttonStart" layoutX="160.0" layoutY="470.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" text="START">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelWin" layoutX="120.0" layoutY="540.0" opacity="0.0" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelStep" layoutX="120.0" layoutY="60.0" opacity="0.0" prefHeight="30.0" prefWidth="200.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="imageIcon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#handle" onMousePressed="#handle" prefHeight="31.0" prefWidth="420.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button fx:id="minimizeButton" layoutX="320.0" mnemonicParsing="false" onMouseEntered="#handle" onMouseExited="#handle" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #000000;" text="_" textFill="WHITE">
+               <font>
+                  <Font name="Symbola" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="closeButton" layoutX="380.0" mnemonicParsing="false" onMouseDragEntered="#initialize" onMouseDragExited="#initialize" onMouseEntered="#handle" onMouseExited="#handle" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #000000;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageIconLabel" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Label2.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="labelStep1" alignment="CENTER" layoutX="110.0" prefHeight="30.0" prefWidth="200.0" text="Tic Tac Toe" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="maximizeButton" disable="true" layoutX="342.0" layoutY="-4.0" mnemonicParsing="false" onMouseEntered="#handle" onMouseExited="#handle" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imageIconLabel1" fitHeight="30.0" fitWidth="30.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/Maximize.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
